@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <h1>愛酷1號-GPT3.5-turbo</h1>
+    <h1>AI1號-GPT3.5-turbo</h1>
   </header>
   <section class="content" ref="msgContainer">
     <ul id="chat-area" v-for="(message, index) in chatMessages" :key="index">
@@ -49,7 +49,7 @@ export default {
   },
   mounted() {
     this.chatMessages.push({
-      msg: '您好，我是 Azure OpenAI 的 愛酷1號，有任何問題都可以問我 ^_^',
+      msg: '您好，我是 Azure OpenAI 的 AI1號，有任何問題都可以問我 ^_^',
       role: 'Bot',
     });
   },
