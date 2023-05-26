@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <h1>Azure OpenAI ChatGPT Bot</h1>
+    <h1>愛酷1號</h1>
   </header>
   <section class="content" ref="msgContainer">
     <ul id="chat-area" v-for="(message, index) in chatMessages" :key="index">
@@ -49,7 +49,7 @@ export default {
   },
   mounted() {
     this.chatMessages.push({
-      msg: '您好，我是 Azure OpenAI 的 ChatGPT，有任何問題都可以問我 ^_^',
+      msg: '您好，我是 Azure OpenAI 的 愛酷1號，有任何問題都可以問我 ^_^',
       role: 'Bot',
     });
   },
@@ -97,7 +97,7 @@ export default {
         messages: [
           {
             role: 'system',
-            content: '你是一個名叫「OpenAI ChatGPT」的角色。請用小於6歲的孩子能夠聽懂的語言和親切、容易親近的口吻來講話。',
+            content: '你是一個名叫「愛酷1號」的角色。請用小於6歲的孩子能夠聽懂的語言和親切、容易親近的口吻來講話。',
           },
           {
             role: 'user',
@@ -117,12 +117,12 @@ export default {
       };
       try {
         const res = await axios.post(
-          `${this.openaiEndpoint}openai/deployments/${this.openaiModelDeploymentName}/chat/completions?api-version=2023-03-15-preview`,
+          'https://nicklab.openai.azure.com/openai/deployments/NickLab/chat/completions?api-version=2023-03-15-preview',
           JSON.stringify(reqBody),
           {
             headers: {
               'content-type': 'application/json',
-              'api-key': this.openaiKey,
+              'api-key': '7e258da135fd492d9a14e7fcbd6f515c',
             },
           },
         );
