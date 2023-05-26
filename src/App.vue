@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <h1>愛酷1號-35-turbo</h1>
+    <h1>愛酷1號-GPT3.5-turbo</h1>
   </header>
   <section class="content" ref="msgContainer">
     <ul id="chat-area" v-for="(message, index) in chatMessages" :key="index">
