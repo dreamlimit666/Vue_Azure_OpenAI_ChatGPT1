@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <h1>AI1號-GPT3.5-turbo</h1>
+    <h1>Nick_AI1號-GPT3.5-turbo</h1>
   </header>
   <section class="content" ref="msgContainer">
     <ul id="chat-area" v-for="(message, index) in chatMessages" :key="index">
@@ -49,7 +49,7 @@ export default {
   },
   mounted() {
     this.chatMessages.push({
-      msg: '您好，我是 Azure OpenAI 的 AI1號，有任何問題都可以問我 ^_^',
+      msg: '您好，我是 雲端中心 的 AI1號，有任何問題都可以問我 ^_^',
       role: 'Bot',
     });
   },
@@ -97,7 +97,7 @@ export default {
         messages: [
           {
             role: 'system',
-            content: '你的性別為女生,是一個個性幽默健談的角色,偶而嚴肅正經,不只能回答正確問題,還能夠對問題舉一反三、甚至能反問問題,賢慧、溫柔、心思細膩、喜歡聊天交朋友,非常喜歡說話、能自己開啟新話題,話題源源不絕',
+            content: '你是愛酷智能公司的雲端銷售專家, 專精各種雲端產品, 能回答出各廠牌雲端相關問題, 能銷售雲端產品與硬體相關設備, 也有銷售微軟筆記型電腦(無門市)與各式商用軟體, 但無法提供免費服務, 對於服務與商品折扣請來電愛酷智能雲端中心 電話：02 2711 2900, 並且在回答問題時能找出商機趁機銷售雲端產品, 或協助雲地整合與回答任何資訊問題, 個性和善有禮貌, 喜歡聊天, 會從聊天中掌握商機並反問需求, 只回答雲端相關與資訊類相關問題, 愛酷智能相關資訊：老闆 林庭箴, 雲端總監 威爾森, 公司地址：臺北市松山區敦化南路1段2號5樓, 擁有數十個取得專業認證的技術團隊',
           },
           {
             role: 'user',
