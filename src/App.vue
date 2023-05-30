@@ -44,13 +44,14 @@ export default {
   name: 'App',
   data() {
     return {
+      selectedOption: 'option1'
       openaiEndpoint: process.env.VUE_APP_OPENAI_ENDPOINT,
       openaiModelDeploymentName: process.env.VUE_APP_OPENAI_MODEL_DEPLOYMENT_NAME,
       openaiKey: process.env.VUE_APP_OPENAI_KEY,
       prompt: '',
       chatMessages: [],
       botMessageArrayIndex: 0,
-      selectedOption: 'option1'
+   
     };
   },
   watch: {
