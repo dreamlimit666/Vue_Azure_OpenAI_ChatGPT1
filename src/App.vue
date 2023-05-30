@@ -53,6 +53,12 @@ export default {
       selectedOption: 'option1'
     };
   },
+  watch: {
+    selectedOption(newValue) {
+      // 在这里执行你想要的操作
+      console.log('选中的选项：', newValue);
+    }
+  },
   mounted() {
     this.chatMessages.push({
       msg: '您好，我是 雲端中心 的 AI1號，有任何問題都可以問我 ^_^',
