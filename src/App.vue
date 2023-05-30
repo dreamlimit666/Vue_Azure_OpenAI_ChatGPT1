@@ -1,6 +1,12 @@
 <template>
   <header class="header">
     <h1>Nick_AI1號-GPT3.5-turbo</h1>
+    <nav>
+  <ul>
+    <li><a href="#">菜单项1</a></li>
+    <li><a href="#">菜单项2</a></li>
+  </ul>
+</nav>
   </header>
   <section class="content" ref="msgContainer">
     <ul id="chat-area" v-for="(message, index) in chatMessages" :key="index">
