@@ -47,7 +47,7 @@ export default {
       chatMessages: [],
       botMessageArrayIndex: 0,
     };
-  mounted() {
+  mounted(){
     this.chatMessages.push({
       msg: '您好，我是 雲端中心 的 AI1號，有任何問題都可以問我 ^_^',
       role: 'Bot',
