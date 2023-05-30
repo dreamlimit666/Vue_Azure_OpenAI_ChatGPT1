@@ -1,11 +1,6 @@
 <template>
   <header class="header">
     <h1>Nick_AI1號-GPT3.5-turbo</h1>
-   <select v-model="selectedOption">
-      <option value="option1">选项1</option>
-      <option value="option2">选项2</option>
-      <option value="option3">选项3</option>
-    </select>
   </header>
   <section class="content" ref="msgContainer">
     <ul id="chat-area" v-for="(message, index) in chatMessages" :key="index">
@@ -51,15 +46,7 @@ export default {
       prompt: '',
       chatMessages: [],
       botMessageArrayIndex: 0,
-   
     };
-  },
-  watch: {
-    selectedOption(newValue) {
-      // 在这里执行你想要的操作
-      console.log('选中的选项：', newValue);
-    }
-  },
   mounted() {
     this.chatMessages.push({
       msg: '您好，我是 雲端中心 的 AI1號，有任何問題都可以問我 ^_^',
