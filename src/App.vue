@@ -1,12 +1,11 @@
 <template>
   <header class="header">
     <h1>Nick_AI1號-GPT3.5-turbo</h1>
-    <nav>
-  <ul>
-    <li><a href="#">菜单项1</a></li>
-    <li><a href="#">菜单项2</a></li>
-  </ul>
-</nav>
+   <select v-model="selectedOption">
+      <option value="option1">选项1</option>
+      <option value="option2">选项2</option>
+      <option value="option3">选项3</option>
+    </select>
   </header>
   <section class="content" ref="msgContainer">
     <ul id="chat-area" v-for="(message, index) in chatMessages" :key="index">
@@ -51,6 +50,7 @@ export default {
       prompt: '',
       chatMessages: [],
       botMessageArrayIndex: 0,
+      selectedOption: 'option1',
     };
   },
   mounted() {
