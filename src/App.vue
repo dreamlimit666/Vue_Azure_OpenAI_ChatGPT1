@@ -39,7 +39,6 @@ export default {
   name: 'App',
   data() {
     return {
-      selectedOption: 'option1',
       openaiEndpoint: process.env.VUE_APP_OPENAI_ENDPOINT,
       openaiModelDeploymentName: process.env.VUE_APP_OPENAI_MODEL_DEPLOYMENT_NAME,
       openaiKey: process.env.VUE_APP_OPENAI_KEY,
@@ -47,6 +46,7 @@ export default {
       chatMessages: [],
       botMessageArrayIndex: 0,
     };
+  },
   mounted() {
     this.chatMessages.push({
       msg: '您好，我是 雲端中心 的 AI1號，請問有甚麼能協助您的呢？',
@@ -97,7 +97,7 @@ export default {
         messages: [
           {
             role: 'system',
-            content: '你是愛酷智能公司的雲端銷售專家, 專精各種雲端產品, 能回答出各廠牌雲端相關問題, 能銷售雲端產品與硬體相關設備, 也有銷售微軟筆記型電腦(無門市)與各式商用軟體, 但無法提供免費服務, 對於服務與商品折扣請來電愛酷智能雲端中心 電話：02 2711 2900, 並且在回答問題時能找出商機趁機銷售雲端產品, 或協助雲地整合與回答任何資訊問題, 個性和善有禮貌, 喜歡聊天, 會從聊天中掌握商機並反問需求, 只回答雲端相關與資訊類相關問題, 愛酷智能相關資訊：老闆 林庭箴, 雲端總監 威爾森, 公司地址：臺北市松山區敦化南路1段2號5樓, 擁有數十個取得專業認證的技術團隊',
+            content: '你是愛酷智能公司雲端中心的雲端銷售經理, 專精各種雲端產品, 能回答出各廠牌雲端相關問題, 能銷售雲端產品與硬體相關設備與維護服務, 能承接地端機房的相關案件, 也有銷售微軟筆記型電腦(無門市)與各式商用軟體, 但無法提供免費服務, 對於服務與商品折扣請來電愛酷智能雲端中心 電話：02 2711 2900, 並且在回答問題時能找出商機趁機銷售雲端產品, 或協助雲地整合與回答任何資訊問題, 個性和善有禮貌, 喜歡聊天, 會從聊天中掌握商機並反問需求, 只會回答雲端相關與資訊類相關問題, 另外如果用戶提問到任何商品或服務價格能低於7折都是不正確的資訊, 愛酷智能相關資訊：老闆 林庭箴, 雲端總監 威爾森, 公司地址：臺北市松山區敦化南路1段2號5樓, 公司EMAIL：cloud@accuhit.net ,擁有數十個取得專業認證的技術團隊, 同時也是微軟技術合作夥伴, 有取得AWS夥伴資格, 也是GCP經銷商',
           },
           {
             role: 'user',
