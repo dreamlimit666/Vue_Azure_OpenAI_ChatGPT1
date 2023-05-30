@@ -50,7 +50,7 @@ export default {
       prompt: '',
       chatMessages: [],
       botMessageArrayIndex: 0,
-      selectedOption: 'option1',
+      selectedOption: 'option1'
     };
   },
   mounted() {
